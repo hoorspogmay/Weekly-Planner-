@@ -565,12 +565,11 @@
             monday.setDate(today.getDate() + mondayOffset + (weekOffset * 7));
             
             const weekDates = [];
-            for (let i = 0; i < 5; i++) { // Monday to Friday
-                const date = new Date(monday);
-                date.setDate(monday.getDate() + i);
-                weekDates.push(date);
-            }
-            
+            for (let i = 0; i < 7; i++) { // Monday to Sunday
+            const date = new Date(monday);
+            date.setDate(monday.getDate() + i);
+            weekDates.push(date);
+        }     
             return weekDates;
         }
 
@@ -844,5 +843,6 @@
 </body>
 
 </html>
+
 
 
