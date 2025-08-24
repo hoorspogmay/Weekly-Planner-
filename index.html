@@ -610,7 +610,7 @@
 
         function generateWeeklyGrid() {
             const grid = document.getElementById('weeklyGrid');
-            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' , 'Saturday' , 'Sunday'];
             const weekDates = getWeekDates(currentWeekOffset);
             
             grid.innerHTML = '';
@@ -750,7 +750,7 @@
         }
 
         function exportData() {
-            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' , 'Saturday' , 'Sunday'];
             const weekDates = getWeekDates(currentWeekOffset);
             let csvContent = 'Date,Day,Activity,Type,Time,Status,Notes\n';
             
@@ -844,4 +844,5 @@
 </body>
 
 </html>
+
 
